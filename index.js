@@ -1,6 +1,8 @@
 const btn = document.querySelector(".btns");
 const btns = document.querySelectorAll(".btn-g2");
 const img_ele = document.querySelectorAll(".project-1");
+const btnHire = document.querySelector(".btn-hire-1");
+const btnHire2 = document.querySelector(".btn-hire-2");
 const cover = document.querySelector(".project-1-cover");
 
 // NAvebar//
@@ -40,7 +42,7 @@ function ftn(e) {
   e.target.classList.add("btn-active");
   const num = e.target.dataset.btnNum;
   const all_img = document.querySelectorAll(`.pbtn${num}`);
-  console.log(`p-btn-${num}`);
+  console.log(img_ele);
   img_ele.forEach((element) => {
     element.classList.add("img-not-active");
   });
@@ -145,3 +147,17 @@ handleActive = () => {
     nav = false;
   }
 };
+btnHire.addEventListener("click", () => {
+  window.scroll({
+    top: 2500,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+btnHire2.addEventListener("click", () => {
+  window.scroll({
+    top: 2500,
+    left: 0,
+    behavior: "smooth",
+  });
+});

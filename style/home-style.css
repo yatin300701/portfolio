@@ -119,6 +119,10 @@ p {
   transition: all 0.3s ease;
   box-shadow: 0 0 0.4rem black;
 }
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .btn:active,
 .btn:hover {
@@ -544,21 +548,30 @@ span {
 .footer {
   background-color: var(--h1-color);
   width: 100%;
+  height: 100%;
 }
 .container-footer {
   max-width: 1000px;
-  margin: 1rem auto;
-  padding: 3rem auto;
+  margin: 3rem auto;
+  padding: 2rem auto;
 }
 .footer-top-heading {
   width: 50rem;
   padding-top: 4rem;
 }
 .top_footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.links_ul {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+.links_li {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .footer-top-heading,
 .footer-top-heading h2 {
@@ -613,6 +626,13 @@ span {
 @media (max-width: 770px) {
   /* navbar responsive */
 
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-1 {
+    margin: 4rem 0;
+  }
   .not-active {
     display: flex;
   }
@@ -699,6 +719,11 @@ span {
   .bio-img {
     display: none;
   }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 3rem 0;
+  }
   .number {
     display: none;
   }
@@ -742,6 +767,9 @@ span {
   .about {
     width: auto;
   }
+  .portfolio {
+    margin-top: 80px;
+  }
   .questions {
     margin-bottom: 3rem;
   }
@@ -750,12 +778,20 @@ span {
 /* 
 Potfolio Cards 
 */
+
 .portfolio-container {
   width: 30rem;
   height: 40rem;
   background-color: #000;
   border-radius: 10px;
+  z-index: -1;
   color: #fff;
+  transform: translate(0, 0);
+  transition: all 0.6s ease;
+}
+.portfolio-container:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 2px 2px 10px black;
 }
 .portfolio-cover {
   display: flex;
