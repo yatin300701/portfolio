@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style/home-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="headder">
+      <div class="logo-img">
+        <img
+          src="./img/portfolioimg-removebg-preview.png"
+          class="img-logo"
+          alt="logo"
+        />
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-bar-list navbar-left">
+          <li class="nav-bar-list-item home " ><a href="#" data-btn-nav="1">Home</a></li>
+          <li class="nav-bar-list-item about" ><a href="#" data-btn-nav="2">Projects</a></li>
+          <li class="nav-bar-list-item services0" ><a href="#" data-btn-nav="3">Bio</a></li>
+          <li class="nav-bar-list-item portfolio" ><a href="#" data-btn-nav="4">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="not-active responsive-nav">
+        <span class="menu_res"
+          ><ion-icon
+            name="menu-outline"
+            class="icons-nav bar-res"
+            onclick="handleActive()"
+          ></ion-icon
+        ></span>
+        <ion-icon
+          name="close-outline"
+          class="icons-nav close-res not-active-icon"
+          onclick="handleActive()"
+        ></ion-icon>
+      </div>
+    </header>
+    <!-- ***************
+            MAIN
+        ****************** -->
+    <main>
+      <!-- ************
+            TOP SETION
+        *************** -->
+
+      <section class="top-section">
+        <div class="container-grid">
+          <div class="top-section-data">
+            <p class="para-top para-top-top">this is me</p>
+            <h1 class="header1">Yatin</h1>
+            <p class="para-top para-top-btm">I am a Frontend Developer</p>
+            <br />
+            <button class="btn">Hire Me</button>
+          </div>
+          <div class="top-img">
+            <img
+              src="./img/profile.png"
+              class="top-section-img"
+              alt="top-logo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- *************
+            PORTFOLIO SECTION 
+        ********************-->
+
+      <section class="portfolio" id="portfolio-section">
+        <h2>Projects Section</h2>
+        <br />
+        <span class="dot"></span>
+        <div class="hr-line hr-portfolio"></div>
+        <p>
+          These are some of the projects I have worked on during my collge
+          years.I have worked continuously on many others projects also.
+        </p>
+
+        <!-- data-btn-num="1" -->
+        <div class="grid-2 btns">
+          <div class="btn btn-g2" data-btn-num="1">Vanilla JS</div>
+          <div class="btn btn-g2" data-btn-num="2">React</div>
+        </div>
+
+        <div class="grid-3 portfolio-img">
+          <!-- pbtn2 -->
+         
+            
+              <!-- <a
+                href="https://github.com/yatin300701/Inshorts-Clone"
+                target="_blank"
+                >
+                
+                <img src="./img/Screenshot (194).png" class="img-pro" alt="" />
+            <div class="project-1-cover-pre">
+              <h4>Inshort Clone</h4></a
+              > -->
+
+              <div class="portfolio-container pbtn2 project-1 ">
+                <img src="./img/Screenshot (194).png" class="img-pro" alt="" />
+                <div class="portfolio-cover">
+                  <!-- <h2>Inshorts-Clone</h2> -->
+                 <h3>Insorts Clone</h3>
+                 <li>Used News API to print latest NEWS</li>
+                <li>Prints NEWS based on category you choose</li>
+                <li><b>Used:</b>&nbsp; ReactJs, React BootsTrap</li>
+                 <a href="https://github.com/yatin300701/crypto-tracker" class="portfolio-a"  target="_blank"> Link of it</a>
+                </div>
+              </div>
+
+              <div class="portfolio-container pbtn2 project-1 ">
+                <img src="./img/crypto-hunter.png" class="img-pro" alt="" />
+                <div class="portfolio-cover">
+                  <!-- <h2>Inshorts-Clone</h2> -->
+                 <h3>Crypto Hunter</h3>
+                 <li>Used Crypto API to show Crypto Coins</li>
+                <li>Used Firebase </li>
+                <li>Used ChartJS to show graphs</li>
+                <li><b>Used:</b>&nbsp; ReactJs, React BootsTrap, Firebase , ChartJs</li>
+                 <a href="https://github.com/yatin300701/Find-The-Card-Game" class="portfolio-a"  target="_blank"> Link of it</a>
+                </div>
+              </div>
+
+              <div class="portfolio-container pbtn1 project-2 ">
+                <img src="./img/findthecard.png" class="img-pro" alt="" />
+                <div class="portfolio-cover">
+                  <!-- <h2>Inshorts-Clone</h2> -->
+                 <h3>Find The Card</h3>
+                 <li>Game to find number among three cards</li>
+                <li>Have 2 chance to guess the card</li>
+                <!-- <li>Used ChartJS to show graphs</li> -->
+                <li><b>Used:</b>&nbsp; HTML , CSS ,JS</li>
+                 <a href="https://github.com/yatin300701/Inshorts-Clone" class="portfolio-a"  target="_blank"> Link of it</a>
+                </div>
+              </div>
+              <!-- <hr /> -->
+              <hr class="img-not-active" />
+              <!-- <li class="project-1-li">
+                <a
+                  href="https://github.com/yatin300701/Inshorts-Clone"
+                  target="_blank"
+                  >-GitHub Link</a
+                >
+              </li> -->
+              <!-- <ol class="project-1-cover">
+                <li>Used News API to print latest NEWS</li>
+                <li>Prints NEWS based on category you choose</li>
+                <li><b>Used:</b>&nbsp; ReactJs, React BootsTrap</li>
+              </ol> -->
+            
+          </div>
+
+          <!-- <div class="project-2 pbtn1">
+            <img src="./img/apple.png" class="img-pro" alt="" />
+            <div class="project-2-cover">
+              <a href="">Game/NextJs Project</a>
+            </div>
+          </div>
+
+          <div class="project-3 pbtn1">
+            <img src="./img/apple.png" class="img-pro" alt="" />
+            <div class="project-3-cover">
+              <a href="">Game/NextJs Project</a>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- BIO SECTION -->
+
+      <section class="bio">
+        <div class="container-grid bio-section">
+          <div class="bio-img">
+            <img src="./img/bio.jpg" class="img-bio" alt="bio" />
+          </div>
+          <div class="bio-right">
+            <h2>My Bio-Data</h2>
+            <div class="hr-line bio-line-r"></div>
+            
+            <p class="para">
+              I am a pre-final year undergraduate student majoring in Computer Science, enthusiastic about frontend technologies.
+              I am learning 𝐌𝐄𝐑𝐍 𝐬𝐭𝐚𝐜𝐤, soaking up as much knowledge and practice as I can in an attempt to perfect my craft.
+              Innovative, creative, and willing to contribute ideas and learn new things, I'm looking forward to the opportunities where I can use my skills and knowledge to solve real world problems.
+              
+            </p>
+            <br>
+          <b class="bold">Download CV</b>
+           
+            <button class="btn">Download</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Number Section -->
+
+      <section class="overlay-section">
+        <div class="overlay"></div>
+        <div class="container-overlay">
+          <h2>I am <span class="id">available</span> for work</h2>
+          <p>
+            I have worked extensively in ReactJs , React Router , React Redux , BootsTrap and web technologies. And is willing to use my experience in making new websites.
+          </p>
+          <button class="btn btn-overlay">Hire Me</button>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+
+      <section class="services">
+        <div class="container-services">
+          <h2>Worked On</h2>
+          <span class="dot"></span>
+          <div class="hr-line"></div>
+        </div>
+        <!-- cards -->
+        <div class="container-card">
+          <div class="services-section">
+            <ion-icon name="desktop-outline" class="icon"></ion-icon>
+            <h3>Web Design</h3>
+            
+          </div>
+          <div class="services-section">
+            <ion-icon name="phone-portrait-outline" class="icon"></ion-icon>
+            <h3>App Design</h3>
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+
+      <!-- Swiper -->
+      <!-- <section class="testimony">
+        <div class="swiper-top">
+          <h2>Testimony</h2>
+          <br />
+          <span class="dot"></span>
+          <div class="hr-line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            minus, ipsam corporis atque aut odio nihil! Dolores natus amet
+            laudantium.
+          </p>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  , voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-slider">
+                <img src="./img/icons8-quote-left-30.png" alt="" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam, voluptatum.
+                </p>
+                <img src="./img/icons8-get-quote-50.png" alt="" />
+              </div>
+              <div class="para">
+                <img src="./img/apjabdulkalam.jfif" alt="img" />
+                <h3>Name1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section> -->
+
+    
+    
+    </main>
+
+    <!-- Contect Section -->
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-top-heading">
+          <h2>Contect Me</h2>
+          <br />
+          <span class="dot"></span>
+          <div class="hr-line"></div>
+          <p>
+            Connect with me on my email and different social media accounts
+          </p>
+        </div>
+        <div class="top_footer">
+          <div class="about">
+           
+          </div>
+          <div class="links">
+            <h3>Links</h3>
+            <ul class="links_ul">
+              <li class="links_li"><a>Home</a></li>
+              <li class="links_li"><a>About</a></li>
+              <li class="links_li"><a>Portfolio</a></li>
+              <li class="links_li"><a>Contact Us</a></li>
+            </ul>
+          </div>
+         
+          <div class="questions">
+            <h3>Have a question?</h3>
+            <ul class="links_ul">
+              <li class="links_li">
+                <ion-icon name="location-outline" class="icons"></ion-icon>
+                <a>Delhi</a>
+              </li>
+              <li class="links_li">
+                <ion-icon name="call-outline" class="icons"></ion-icon
+                ><a href="tel:+919643816457">9643816457</a>
+              </li>
+              <li class="links_li">
+                <ion-icon name="mail-outline" class="icons"></ion-icon
+                ><a href="mailto:yatin300701@gmail.com"
+                  >yatin300701@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Script Secion -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script defer src="index.js"></script>
+  </body>
+</html>
