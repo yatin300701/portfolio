@@ -25,7 +25,7 @@ navbar_ul.addEventListener("click", (e) => {
     });
   } else if (bb == 4) {
     window.scroll({
-      top: 3390,
+      top: 2100,
       left: 0,
       behavior: "smooth",
     });
@@ -41,8 +41,13 @@ function ftn(e) {
   });
   e.target.classList.add("btn-active");
   const num = e.target.dataset.btnNum;
-  const all_img = document.querySelectorAll(`.pbtn${num}`);
-  console.log(img_ele);
+  let all_img;
+  if (num == 3) {
+    all_img = document.querySelectorAll(".all");
+  } else {
+    all_img = document.querySelectorAll(`.pbtn${num}`);
+  }
+
   img_ele.forEach((element) => {
     element.classList.add("img-not-active");
   });
@@ -97,25 +102,6 @@ window.onscroll = function () {
   }
 };
 
-// Number Change
-
-const number = document.querySelectorAll(".num");
-number.forEach((ele) => {
-  // console.log("djk");
-  function updateNum() {
-    let insideEle = parseInt(ele.innerHTML);
-    const finalValue = parseInt(ele.dataset.num);
-
-    insideEle = parseInt(ele.innerHTML);
-
-    if (insideEle < finalValue) {
-      ele.innerHTML = insideEle + 500;
-      setTimeout(updateNum(ele), 5000);
-    }
-  }
-  updateNum();
-});
-
 // NavBar responsive
 
 nav = false;
@@ -149,15 +135,17 @@ handleActive = () => {
 };
 btnHire.addEventListener("click", () => {
   window.scroll({
-    top: 2500,
+    top: 2150,
     left: 0,
     behavior: "smooth",
   });
 });
 btnHire2.addEventListener("click", () => {
   window.scroll({
-    top: 2500,
+    top: 2150,
     left: 0,
     behavior: "smooth",
   });
 });
+
+//*********************Email Sending************* */

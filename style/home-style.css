@@ -70,7 +70,7 @@ p {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  height: 5.6rem;
+  height: 6rem;
 }
 
 .nav-bar-list {
@@ -143,6 +143,7 @@ p {
 
 .top-img {
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -170,12 +171,19 @@ p {
 .top-section-img {
   height: 36rem;
 }
+.top-img-container {
+  background-image: url("/img/blob-haikei.svg");
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+}
 
 /* ##########################
 ########### BIO REUSABLE ########## */
 
 .bio {
-  margin: 9rem 0;
+  padding: 9rem 0;
+  background-color: var(--background-dark);
 }
 
 .bio-img {
@@ -283,7 +291,7 @@ span {
 
 .portfolio p {
   max-width: 60rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 
 .hr-portfolio {
@@ -316,7 +324,6 @@ span {
 .project-1 {
   width: 100%;
   position: relative;
-  cursor: pointer;
 }
 
 .project-1-cover {
@@ -542,6 +549,75 @@ span {
   height: 100px;
 }
 
+/* *************
+*****Contect****
+***************/
+
+.form-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-services {
+  width: 50%;
+}
+.services-left {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.services-left input {
+  margin: 1rem 0;
+  width: 35rem;
+  height: 3rem;
+}
+.services-left textarea {
+  margin: 1rem 0;
+  width: 35rem;
+  height: 20rem;
+}
+.services-right {
+  color: white;
+  background-color: #000;
+  width: 50%;
+  height: 43rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.services-right p {
+  font-size: 4rem;
+  display: flex;
+  justify-content: right;
+  color: #fff !important;
+  margin: 2rem 0;
+}
+.contact-line {
+  width: 100%;
+}
+.services-right li {
+  display: flex;
+  justify-content: right;
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+.icons {
+  background-color: black;
+  margin-left: 1rem;
+}
+.services-right a {
+  color: #fff !important;
+}
+.logo {
+  background-color: var(--background-quote);
+  margin: 0 3rem;
+}
+
 /* ****************
 ***** Footer *****
 ***************** */
@@ -556,8 +632,7 @@ span {
   padding: 2rem auto;
 }
 .footer-top-heading {
-  width: 50rem;
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 .top_footer {
   display: flex;
@@ -650,6 +725,7 @@ span {
     justify-content: space-evenly;
     width: 100vw;
     padding: 0px;
+    z-index: 3;
 
     background-image: var(--l-gradient);
   }
@@ -716,6 +792,9 @@ span {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio-container {
+    margin-left: 1rem;
+  }
   .bio-img {
     display: none;
   }
@@ -755,6 +834,24 @@ span {
   .about {
     width: 16rem;
   }
+  .form-data {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .form-data input {
+    width: 100%;
+  }
+  .form-data textarea {
+    width: 100%;
+  }
+  .left-services {
+    width: 100%;
+  }
+  .services-right {
+    width: 100%;
+  }
 }
 @media (max-width: 376px) {
   .footer-top-heading {
@@ -784,7 +881,7 @@ Potfolio Cards
   height: 40rem;
   background-color: #000;
   border-radius: 10px;
-  z-index: -1;
+  /* z-index: -1; */
   color: #fff;
   transform: translate(0, 0);
   transition: all 0.6s ease;
@@ -794,23 +891,32 @@ Potfolio Cards
   box-shadow: 2px 2px 10px black;
 }
 .portfolio-cover {
-  display: flex;
-  margin-top: 3rem;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 6rem 2rem;
 }
 
-.portfolio-a,
+.portfolio-a {
+  font-size: 150%;
+  cursor: pointer;
+}
 .portfolio-cover h3,
-.portfolio-cover li {
+.portfolio-cover p {
   color: #fff;
   font-size: 150%;
   list-style: none;
-  margin: 3px;
+  margin: 2rem 0;
 }
 .portfolio-cover a {
-  color: yellow;
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6%;
+  background-color: rgb(156, 29, 203);
+}
+.portfolio-cover span {
+  color: #fff;
+  background-color: rgb(0, 162, 255);
+  padding: 0.5rem 0.5rem;
+  cursor: default;
+  border-radius: 3%;
 }
 .portfolio-cover h3 {
   font-size: 3rem;

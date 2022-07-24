@@ -62,14 +62,16 @@
             <h1 class="header1">Yatin</h1>
             <p class="para-top para-top-btm">I am a Frontend Developer</p>
             <br />
-            <button class="btn btn-hire-2">Hire Me</button>
+            <button class="btn btn-hire-2">Contact Me</button>
           </div>
           <div class="top-img">
-            <img
+            <div class="top-img-container">
+              <img
               src="./img/profile.png"
               class="top-section-img"
               alt="top-logo"
             />
+            </div>
           </div>
         </div>
       </section>
@@ -79,7 +81,7 @@
         ********************-->
 
       <section class="portfolio" id="portfolio-section">
-        <h2>Projects Section</h2>
+        <h2>Project Section</h2>
         <br />
         <span class="dot"></span>
         <div class="hr-line hr-portfolio"></div>
@@ -90,47 +92,46 @@
 
        
         <div class="grid-2 btns">
-          <div class="btn btn-g2" data-btn-num="1">Vanilla JS</div>
-          <div class="btn btn-g2" data-btn-num="2">React</div>
+          <div class="btn btn-g2" data-btn-num="3">All</div>
+          <div class="btn btn-g2" data-btn-num="2">React Js</div>
+          <div class="btn btn-g2" data-btn-num="1">HTML CSS</div>
         </div>
 
         <div class="grid-3 portfolio-img">
 
-              <div class="portfolio-container pbtn2 project-1 ">
+              <div class="portfolio-container pbtn2 project-1 all">
                 <img src="./img/Screenshot (194).png" class="img-pro" alt="" />
                 <div class="portfolio-cover">
-                
                  <h3>Insorts Clone</h3>
-                 <li>Used News API to print latest NEWS</li>
-                <li>Prints NEWS based on category you choose</li>
-                <li><b>Used:</b>&nbsp; ReactJs, React BootsTrap</li>
-                 <a href="https://github.com/yatin300701/Inshorts-Clone" class="portfolio-a"  target="_blank"> Link of it</a>
+                <p>
+                  <span>React Js</span>
+                  <span>BootsTrap</span>
+                </p>
+                 <a href="https://github.com/yatin300701/Inshorts-Clone" class="portfolio-a"  target="_blank"> Link</a>
                 </div>
               </div>
 
-              <div class="portfolio-container pbtn2 project-1 ">
+              <div class="portfolio-container pbtn2 project-1 all">
                 <img src="./img/crypto-hunter.png" class="img-pro" alt="" />
                 <div class="portfolio-cover">
                  
                  <h3>Crypto Hunter</h3>
-                 <li>Used Crypto API to show Crypto Coins</li>
-                <li>Used Firebase </li>
-                <li>Used ChartJS to show graphs</li>
-                <li><b>Used:</b>&nbsp; ReactJs, React BootsTrap, Firebase , ChartJs</li>
-                 <a href="https://github.com/yatin300701/crypto-tracker" class="portfolio-a"  target="_blank"> Link of it</a>
+                <p><span>React Js</span> <span>BootsTrap</span></p>
+                 <a href="https://github.com/yatin300701/crypto-tracker" class="portfolio-a"  target="_blank"> Link</a>
                 </div>
               </div>
 
-              <div class="portfolio-container pbtn1 project-1 ">
+              <div class="portfolio-container pbtn1 project-1 all ">
                 <img src="./img/findthecard.png" class="img-pro" alt="" />
                 <div class="portfolio-cover">
                  
                  <h3>Find The Card</h3>
-                 <li>Game to find number among three cards</li>
-                <li>Have 2 chance to guess the card</li>
-                
-                <li><b>Used:</b>&nbsp; HTML , CSS ,JS</li>
-                 <a href="https://github.com/yatin300701/Find-The-Card-Game" class="portfolio-a"  target="_blank"> Link of it</a>
+                <p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </p>
+                 <a href="https://github.com/yatin300701/Find-The-Card-Game" class="portfolio-a"  target="_blank"> Link</a>
                 </div>
               </div>
              
@@ -185,23 +186,52 @@
 
       <section class="services">
         <div class="container-services">
-          <h2>Worked On</h2>
+          <h2>Contact </h2>
           <span class="dot"></span>
           <div class="hr-line"></div>
         </div>
         <!-- cards -->
-        <div class="container-card">
-          <div class="services-section">
-            <ion-icon name="desktop-outline" class="icon"></ion-icon>
-            <h3>Web Design</h3>
-            
-          </div>
-          <div class="services-section">
-            <ion-icon name="phone-portrait-outline" class="icon"></ion-icon>
-            <h3>App Design</h3>
-           
-          </div>
+      <div class="form-data">
+        <div class="left-services">
+          <form
+            action="https://formspree.io/f/mpzbvoyr"
+            method="POST"
+            class="services-left"
+          >
+          Name 
+          <input type="text" name="name" placeholder="Sandeep Kumar" required id="">
+          Email
+          <input type="email" name="email" placeholder="sandeep@123.gmail.com" required id="">
+          Message
+          <textarea name="message" class="text-area" required></textarea>
+          <button type="submit" class="btn">Send Mail</button>
+        </form>
         </div>
+        <div class="services-right">
+          <p class="contect-me-head">Get In Touch</p> <div class="hr-line contact-line "></div>
+          <li class="links_li">
+            
+            <a>Delhi</a> <ion-icon name="location-outline" class="icons"></ion-icon>
+          </li>
+          <li class="links_li">
+            <a href="tel:+919643816457">9643816457</a><ion-icon name="call-outline" class="icons"> </ion-icon
+              >
+          </li>
+          <li class="links_li">
+           <a href="mailto:yatin300701@gmail.com"
+              >yatin300701@gmail.com</a
+            >
+            <ion-icon name="mail-outline" class="icons"></ion-icon
+              >
+          </li>
+          <p><a href="https://github.com/yatin300701" ><img src="/img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" class="logo"  width="20px" height="20px" alt=""></a>
+          <a href="https://www.linkedin.com/in/yatin-choudhary/" ><img src="/img/LinkedIn-Logos/LI-In-Bug.png"  class="logo" width="20px" width="20px" alt=""></a>
+          </p>
+        </div>
+      </div>
+          
+          
+       
       </section>
 
       
@@ -211,7 +241,7 @@
     <footer class="footer">
       <div class="container-footer">
         <div class="footer-top-heading">
-          <h2>Contect Me</h2>
+          <h2>Thanks For Visiting This Page</h2>
           <br />
           <span class="dot"></span>
           <div class="hr-line"></div>
@@ -219,30 +249,7 @@
             Connect with me on my email and different social media accounts
           </p>
         </div>
-        <div class="top_footer">
-          
-          
-         
-          <div class="questions">
-            <h3>Have a question?</h3>
-            <ul class="links_ul">
-              <li class="links_li">
-                <ion-icon name="location-outline" class="icons"></ion-icon>
-                <a>Delhi</a>
-              </li>
-              <li class="links_li">
-                <ion-icon name="call-outline" class="icons"></ion-icon
-                ><a href="tel:+919643816457">9643816457</a>
-              </li>
-              <li class="links_li">
-                <ion-icon name="mail-outline" class="icons"></ion-icon
-                ><a href="mailto:yatin300701@gmail.com"
-                  >yatin300701@gmail.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        
       </div>
     </footer>
     <!-- Script Secion -->
